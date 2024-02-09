@@ -78,6 +78,14 @@ module "sub_compartments_non_prod_HCPRO" {
   app              = var.HCPRO_app
 }
 
+
+resource "oci_identity_compartment" "compartment" {
+  name           = "test"
+  description    = "test"
+  compartment_id = var.compartment_ocid
+  #freeform_tags  = { (var.tag_key) = (each.key), "Env" = var.env, "App" = var.app }
+}
+
 moved {
   from = module.compartments.oci_identity_compartment.compartment[0]
   to   = module.compartments.oci_identity_compartment.compartment["Production"]
