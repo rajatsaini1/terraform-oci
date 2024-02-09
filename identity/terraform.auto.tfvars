@@ -8,12 +8,11 @@ compartments = [
   {
     name = "Non-Production"
     desc = "Compartment for Non-Production"
+  },
+  {
+    name = "OracleFunctions"
+    desc = "Compartment for OracleFunctions"
   }
-  # ,
-  # {
-  #   name = "OracleFunctions"
-  #   desc = "Compartment for OracleFunctions"
-  # }
 ]
 
 sub_compartments_prod = [
