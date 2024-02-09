@@ -1,30 +1,24 @@
 variable "compartments" {
-    default = [
-        {
-            name = "Production"
-            desc = "Compartment from terraform"
-        }
-        ,
-        {
-            name = "Non-Production"
-            desc = "Compartment from terraform"
-        }
-    ]
+  type = list(object({
+    name = string
+    desc = string
+    ocid = string
+  }))
 }
 
 variable "compartment_ocid" {}
 variable "freeform_tags" {
-    default = [
-        {
-            tag_key = "name"
-            name    = "Production"
-        }
-        ,
-        {
-            tag_key = "name"
-            name    = "Non-Production"
-        }
-    ]
+  default = [
+    {
+      tag_key = "name"
+      name    = "Production"
+    }
+    ,
+    {
+      tag_key = "name"
+      name    = "Non-Production"
+    }
+  ]
 }
 
 variable "env" {
@@ -32,7 +26,7 @@ variable "env" {
 }
 
 variable "app" {
-    default = null
+  default = null
 }
 
 variable "tag_key" {

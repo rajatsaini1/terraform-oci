@@ -10,6 +10,11 @@ variable "region" {
 }
 
 variable "compartments" {
+    type = list(object({
+    name = string
+    desc = string
+    ocid = string
+  }))
 }
 
 # prod compartments variables
