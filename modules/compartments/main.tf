@@ -12,7 +12,8 @@ locals {
 
   compartment_names = [for item in var.compartments : [for k, v in item : v if k == "name"]]
   compartment_desc  = [for item in var.compartments : [for k, v in item : v if k == "desc"]]
-  compartment_map   = { for item in var.compartments : item["name"] => item["desc"] }
+  compartment_ocid  = [for item in var.compartments : [for k, v in item : v if k == "ocid"]]
+  compartment_map   = { for item in var.compartments : item["name"] => item }
 
 }
 
@@ -21,7 +22,7 @@ resource "oci_identity_compartment" "compartment" {
   #for_each       = toset(flatten([for item in var.compartments : [for name, desc in item : name]]))
   for_each       = local.compartment_map
   name           = each.key
-  description    = each.value
-  compartment_id = var.compartment_ocid
+  description    = each.value.desc
+  compartment_id = each.value.ocid
   freeform_tags  = { (var.tag_key) = (each.key), "Env" = var.env, "App" = var.app }
 }
