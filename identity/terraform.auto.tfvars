@@ -66,11 +66,11 @@ sub_compartments_HCPRO = [
     name = "Application"
     desc = "Compartment for Application"
   },
-  {
-    name = "Database"
-    desc = "Compartment for Databse"
-  }
-  ,
+#   {
+#     name = "Database"
+#     desc = "Compartment for Databse"
+#   }
+#   ,
   {
     name = "Security"
     desc = "Compartment for Security"
