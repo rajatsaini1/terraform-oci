@@ -3,18 +3,18 @@ compartments = [
   {
     name = "Production"
     desc = "Compartment for Production"
-    ocid = "ocid1.tenancy.oc1..aaaaaaaatqpbui4fxmyo7o4c32v5wd2qjk5gbh67w2eydfzqfrn66ija3xra"
+    ocid = "ocid1.tenancy.oc1..aaaaaaaa4pvujl2mmeqsx33rsd45z57f52ngwmroxzdfj7vgltrrvxyqd5wa"
   }
   ,
   {
     name = "Non-Production"
     desc = "Compartment for Non-Production"
-    ocid = "ocid1.tenancy.oc1..aaaaaaaatqpbui4fxmyo7o4c32v5wd2qjk5gbh67w2eydfzqfrn66ija3xra"
+    ocid = "ocid1.tenancy.oc1..aaaaaaaa4pvujl2mmeqsx33rsd45z57f52ngwmroxzdfj7vgltrrvxyqd5wa"
   },
   {
     name = "OracleFunctions"
     desc = "Compartment for OracleFunctions"
-    ocid = "ocid1.compartment.oc1..aaaaaaaarulkcvbwrtcuagfnl44vw2fh5s4euhwj5tuv2e63daorqwwxglca"
+    ocid = "ocid1.compartment.oc1..aaaaaaaafenai6vuxirygqa5v2iv3nm4a2syywah3ftialhjiezv25axkr2a"
   }
 ]
 
