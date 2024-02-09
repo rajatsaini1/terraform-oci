@@ -1,11 +1,11 @@
 provider "oci" {
-  region = "us-ashburn-1"
+  region = "ap-mumbai-1"
   auth = "InstancePrincipal"
 }
 
 provider "oci" {
   alias  = "main"
-  region = "us-ashburn-1"
+  region = "ap-mumbai-1"
   auth = "InstancePrincipal"
 }
 

@@ -1,6 +1,6 @@
 provider "oci" {
   auth = "InstancePrincipal"
-  region = "us-ashburn-1"
+  region = "ap-mumbai-1"
   alias = "main"
 }
 
