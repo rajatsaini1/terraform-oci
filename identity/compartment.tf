@@ -9,7 +9,7 @@ module "compartments" {
 }
 
 module "sub_compartments_prod" {
-  source = "../modules/compartments"
+  source = "../modules/compartments_new"
   providers = {
     oci = oci.main
   }
@@ -20,7 +20,7 @@ module "sub_compartments_prod" {
 }
 
 module "sub_compartments_non_prod" {
-  source = "../modules/compartments"
+  source = "../modules/compartments_new"
   providers = {
     oci = oci.main
   }
@@ -31,7 +31,7 @@ module "sub_compartments_non_prod" {
 }
 
 module "sub_compartments_prod_iris" {
-  source = "../modules/compartments"
+  source = "../modules/compartments_new"
   providers = {
     oci = oci.main
   }
@@ -43,7 +43,7 @@ module "sub_compartments_prod_iris" {
 }
 
 module "sub_compartments_prod_HCPRO" {
-  source = "../modules/compartments"
+  source = "../modules/compartments_new"
   providers = {
     oci = oci.main
   }
@@ -55,7 +55,7 @@ module "sub_compartments_prod_HCPRO" {
 }
 
 module "sub_compartments_non_prod_iris" {
-  source = "../modules/compartments"
+  source = "../modules/compartments_new"
   providers = {
     oci = oci.main
   }
@@ -67,7 +67,7 @@ module "sub_compartments_non_prod_iris" {
 }
 
 module "sub_compartments_non_prod_HCPRO" {
-  source = "../modules/compartments"
+  source = "../modules/compartments_new"
   providers = {
     oci = oci.main
   }
